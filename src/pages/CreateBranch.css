@@ -1,0 +1,146 @@
+/* Overlay */
+.popup-overlay33 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  z-index: 1000;
+}
+
+/* Popup Box */
+.popup33 {
+  background: #f0f1f8;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 100vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.popup33 h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Grid Layout */
+.popup-form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Input Groups */
+.select-group,
+.select-group33 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.floating-label,
+.floating-label33 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.date-input,
+.date-input33 {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.date-input:focus,
+.date-input33:focus {
+  border-color: #5c6bc0;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  grid-column: span 4;
+}
+
+.btn.pdf {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn.pdf:hover {
+  background-color: #3f51b5;
+}
+
+/* Button Wrapper */
+.create-form {
+margin-right: 70rem;
+margin-top: 70px;
+}
+
+.create-btn {
+  text-align: right;
+  margin-bottom: 20px;
+  
+}
+
+.branch-table-container {
+  margin-top: 1rem;
+  overflow-x: auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 130%;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.branch-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 800px;
+}
+
+.branch-table th,
+.branch-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.branch-table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+.branch-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.branch-table tr:hover {
+  background-color: #f1f1f1;
+}
+

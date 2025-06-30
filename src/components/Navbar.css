@@ -1,0 +1,135 @@
+/* Base Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2980b9;
+  padding: 8px 1px;
+  color: white;
+  position: fixed;   /* ✅ Make navbar fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;     /* ✅ Stay on top of other content */
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 200px;
+}
+
+.navbar-center {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.icon-wrapper:hover .tooltip {
+  opacity: 1;
+}
+
+/* Hide these on small screens */
+.desktop-only {
+  display: flex;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Sidebar Styles */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 250px;
+  background-color: #2b85c1;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-sidebar.open {
+  right: 0;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar-icon {
+  font-size: 16px;
+  border-bottom: 1px solid #ffffff44;
+  padding-bottom: 10px;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
+  }
+}
